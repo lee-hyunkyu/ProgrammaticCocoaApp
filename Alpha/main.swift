@@ -8,14 +8,13 @@
 
 import Cocoa
 
-@NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    @IBOutlet weak var window: NSWindow!
-
+    let mainWindowController = MainWindowController()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        mainWindowController.showWindow(self)
+        print(NSApplication.shared().windows)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -170,3 +169,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 }
 
+let del = AppDelegate()
+let app = NSApplication.shared()
+let mainM = MainMenu()
+app.delegate = del
+app.run()
