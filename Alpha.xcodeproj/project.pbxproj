@@ -10,8 +10,11 @@
 		472924C31E0CB6F100663453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472924C21E0CB6F100663453 /* AppDelegate.swift */; };
 		472924C61E0CB6F100663453 /* Alpha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 472924C41E0CB6F100663453 /* Alpha.xcdatamodeld */; };
 		472924C81E0CB6F100663453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472924C71E0CB6F100663453 /* Assets.xcassets */; };
-		472924CB1E0CB6F100663453 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 472924C91E0CB6F100663453 /* MainMenu.xib */; };
 		472924D61E0CB6F200663453 /* AlphaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472924D51E0CB6F200663453 /* AlphaTests.swift */; };
+		4747D0371E0F19220013EDB6 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747D0361E0F19220013EDB6 /* MainWindowController.swift */; };
+		478BF9781E0F15B600516012 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478BF9771E0F15B600516012 /* CustomView.swift */; };
+		478BF97A1E0F163600516012 /* RightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478BF9791E0F163600516012 /* RightView.swift */; };
+		47DC111C1E0E2AEF00AC7776 /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DC111B1E0E2AEF00AC7776 /* MainSplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,11 +32,14 @@
 		472924C21E0CB6F100663453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		472924C51E0CB6F100663453 /* Alpha.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Alpha.xcdatamodel; sourceTree = "<group>"; };
 		472924C71E0CB6F100663453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		472924CA1E0CB6F100663453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		472924CC1E0CB6F100663453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		472924D11E0CB6F200663453 /* AlphaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlphaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		472924D51E0CB6F200663453 /* AlphaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaTests.swift; sourceTree = "<group>"; };
 		472924D71E0CB6F200663453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4747D0361E0F19220013EDB6 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		478BF9771E0F15B600516012 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		478BF9791E0F163600516012 /* RightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightView.swift; sourceTree = "<group>"; };
+		47DC111B1E0E2AEF00AC7776 /* MainSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +82,11 @@
 			isa = PBXGroup;
 			children = (
 				472924C21E0CB6F100663453 /* AppDelegate.swift */,
+				4747D0361E0F19220013EDB6 /* MainWindowController.swift */,
+				47DC111B1E0E2AEF00AC7776 /* MainSplitViewController.swift */,
+				478BF9771E0F15B600516012 /* CustomView.swift */,
+				478BF9791E0F163600516012 /* RightView.swift */,
 				472924C71E0CB6F100663453 /* Assets.xcassets */,
-				472924C91E0CB6F100663453 /* MainMenu.xib */,
 				472924CC1E0CB6F100663453 /* Info.plist */,
 				472924C41E0CB6F100663453 /* Alpha.xcdatamodeld */,
 			);
@@ -179,7 +188,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				472924C81E0CB6F100663453 /* Assets.xcassets in Resources */,
-				472924CB1E0CB6F100663453 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +206,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				472924C61E0CB6F100663453 /* Alpha.xcdatamodeld in Sources */,
+				478BF9781E0F15B600516012 /* CustomView.swift in Sources */,
+				4747D0371E0F19220013EDB6 /* MainWindowController.swift in Sources */,
+				478BF97A1E0F163600516012 /* RightView.swift in Sources */,
 				472924C31E0CB6F100663453 /* AppDelegate.swift in Sources */,
+				47DC111C1E0E2AEF00AC7776 /* MainSplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,17 +231,6 @@
 			targetProxy = 472924D21E0CB6F200663453 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		472924C91E0CB6F100663453 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				472924CA1E0CB6F100663453 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		472924D81E0CB6F200663453 /* Debug */ = {
@@ -401,6 +402,7 @@
 				472924DC1E0CB6F200663453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		472924DD1E0CB6F200663453 /* Build configuration list for PBXNativeTarget "AlphaTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +411,7 @@
 				472924DF1E0CB6F200663453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
